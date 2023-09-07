@@ -5,7 +5,6 @@ import tensorflow as tf
 from pathlib import Path
 from cnnClassifier.entity.config_entity import PrepareBaseModelConfig
 
-
 class PrepareBaseModel:
     def __init__(self, config: PrepareBaseModelConfig):
         self.config = config
@@ -68,3 +67,5 @@ class PrepareBaseModel:
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
+
+    
