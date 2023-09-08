@@ -91,7 +91,7 @@ open up you local host and port
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
+    - Save the URI: 354610416463.dkr.ecr.us-east-1.amazonaws.com/tensorflow-chicken
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -114,6 +114,7 @@ open up you local host and port
 	sudo usermod -aG docker ubuntu
 
 	newgrp docker
+	docker --version => verifier la version du docker installer.
 	
 # 6. Configure EC2 as self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
